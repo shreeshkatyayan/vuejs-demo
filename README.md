@@ -1,6 +1,6 @@
 ### Known bugs
 
-- Unit test cases not running, unable to debug the issue as of now
+- [x] Unit test cases not running, unable to debug the issue as of now
 
 **FAIL** src/components/StyledButton/\_\_tests\_\_/StyledButton.spec.ts [ src/components/StyledButton/\_\_tests\_\_/StyledButton.spec.ts ]
 
@@ -18,3 +18,4 @@
 
 - Improve test coverage for layout components
 - Add storybook for layout components
+- Add loaders when API responses are pending
