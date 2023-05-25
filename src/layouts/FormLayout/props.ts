@@ -1,4 +1,4 @@
-import { type FormElement } from "./FormConfiguration";
+import { type FormElement } from "../../types/FormConfiguration.types";
 
 export const formLayoutProps = {
     elements: {

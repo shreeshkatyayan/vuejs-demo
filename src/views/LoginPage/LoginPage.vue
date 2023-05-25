@@ -20,13 +20,13 @@
 </template>
 
 <script setup lang="ts">
-import StyledButton from '@/components/StyledButton/StyledButton.vue';
-import type { FormConfiguration } from '@/layouts/FormLayout/FormConfiguration';
-import FormLayout from '@/layouts/FormLayout/FormLayout.vue';
-import { signin } from '@/services/auth.service';
-import { getAuth } from '@firebase/auth';
 import { onMounted, ref } from 'vue';
 import { RouterLink, useRouter } from 'vue-router';
+import { getAuth } from '@firebase/auth';
+import StyledButton from '@/components/StyledButton/StyledButton.vue';
+import type { FormConfiguration } from '@/types/FormConfiguration.types';
+import FormLayout from '@/layouts/FormLayout/FormLayout.vue';
+import { signin } from '@/services/auth.service';
 
 const router = useRouter();
 const email = ref('');

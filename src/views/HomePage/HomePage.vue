@@ -26,12 +26,12 @@
   </div>
 </template>
 <script setup lang="ts">
+import { ref } from 'vue';
 import StyledButton from '@/components/StyledButton/StyledButton.vue';
-import type { FormConfiguration } from '@/layouts/FormLayout/FormConfiguration';
+import type { FormConfiguration } from '@/types/FormConfiguration.types';
 import FormLayout from '@/layouts/FormLayout/FormLayout.vue';
 import { signout, updateUserProfile } from '@/services/auth.service';
 import { useUserDataStore } from '@/stores/UserData.stores';
-import { ref } from 'vue';
 
 const userDataStore = useUserDataStore();
 const editMode = ref(false);
