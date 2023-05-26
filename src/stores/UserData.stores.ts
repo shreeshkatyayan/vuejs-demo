@@ -15,7 +15,7 @@ export const useUserDataStore = defineStore('userData', {
     };
   },
   actions: {
-    updateUser(user: Partial<User> | null) {
+    updateUser(user?: Partial<User>) {
       if (!user) {
         return this.$reset();
       }

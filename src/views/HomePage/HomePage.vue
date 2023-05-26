@@ -1,7 +1,7 @@
 <template>
   <div
     id="home"
-    class="flex flex-col mx-auto border-2 border-gray-200 border-solid rounded-xl bg-white shadow w-1/3 p-6 mt-12"
+    class="flex flex-col mx-auto border-2 border-gray-200 border-solid rounded-xl bg-white shadow w-full md:w-1/2 lg:w-1/3 p-6 mt-12"
   >
     <h1 class="font-medium text-2xl text-center pb-6">User Details</h1>
     <div class="pb-6" v-if="!editMode">

@@ -10,6 +10,9 @@ export default mergeConfig(
     plugins: [vue()],
     test: {
       environment: 'jsdom',
+      coverage: {
+        provider: 'istanbul'
+      },  
       exclude: [...configDefaults.exclude, 'e2e/*'],
       root: fileURLToPath(new URL('./', import.meta.url)),
       transformMode: {

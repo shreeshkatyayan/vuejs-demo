@@ -1,21 +1,50 @@
-### Known bugs
+# Steps to run the application
 
-- [x] Unit test cases not running, unable to debug the issue as of now
+## Before first run
 
-**FAIL** src/components/StyledButton/\_\_tests\_\_/StyledButton.spec.ts [ src/components/StyledButton/\_\_tests\_\_/StyledButton.spec.ts ]
-
-**Error: Failed to parse source for import analysis because the content contains invalid JS syntax. Install @vitejs/plugin-vue to handle .vue files.**
-
+1. Clone the repository
 ```
- ❯ formatError node_modules/vite/dist/node/chunks/dep-4d3eff22.js:42645:46
- ❯ TransformContext.error node_modules/vite/dist/node/chunks/dep-4d3eff22.js:42641:19
- ❯ TransformContext.transform node_modules/vite/dist/node/chunks/dep-4d3eff22.js:40447:22
- ❯ Object.transform node_modules/vite/dist/node/chunks/dep-4d3eff22.js:42919:30
- ❯ loadAndTransform node_modules/vite/dist/node/chunks/dep-4d3eff22.js:53385:29
+git clone git@github.com:shreeshkatyayan/vuejs-demo.git
 ```
 
-### Should Have
+2. Open the folder where repo is cloned
+```
+cd vuejs-demo
+```
 
-- Improve test coverage for layout components
-- Add storybook for layout components
-- Add loaders when API responses are pending
+3. Install project dependencies via NPM
+```
+npm install
+```
+
+4. Create an environment file ```.env```
+```
+VITE_FIREBASE_API_KEY: ""
+VITE_FIREBASE_AUTH_DOMAIN: ""
+VITE_FIREBASE_PROJECT_ID: ""
+VITE_FIREBASE_STORAGE_BUCKET: ""
+VITE_FIREBASE_MESSAGING_SENDER_ID: ""
+VITE_FIREBASE_APP_ID: ""
+```
+
+## Commands
+
+1. Run local development server
+```
+npm run dev
+```
+
+2. Run storybook server
+```
+npm run storybook
+```
+
+3. Run the unit test cases
+```
+npm run test:unit
+```
+
+4. Run the coverage test
+```
+npm run test:coverage
+```
